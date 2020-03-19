@@ -1,3 +1,32 @@
+<button (click)="ngOnDestroy()">Go Offline</button>
+
+<p>
+  <label>
+    New Course (press enter)
+    <br />
+    <input type="text" (keyup.enter)="addCourse(course.value)" #course />
+  </label>
+</p>
+
+<h3>Normal Subscription</h3>
 <ul>
-  <li *ngFor="let course of courses">{{course}}</li>
+  <li *ngFor="let course of courses">
+    {{ course }}
+  </li>
+</ul>
+
+<h3>Async Pipe</h3>
+<ul>
+  <li *ngFor="let course of courses$ | async" #course>
+    {{ course.value }}
+    <button (click)="updateCourse(course)">Update</button>
+    <button (click)="deleteCourse(course)">Delete</button>
+  </li>
+</ul>
+
+<h3>Single Objects</h3>
+<ul *ngIf="author$ | async as author">
+  <li>{{ author["name"] }}</li>
+  <li>{{ author["students"] }}</li>
+  <li>{{ author["isPremium"] }}</li>
 </ul>
