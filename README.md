@@ -7,7 +7,7 @@
 The most comprehensive Angular 4 (Angular 2+) course. Build a real e-commerce app with Angular, Firebase and Bootstrap 4.
 Course link: https://www.udemy.com/course/the-complete-angular-master-class/
 
-![Angular course](src/assets/images/angularCourse.jpg)
+![Angular course](https://miro.medium.com/max/3200/1*_p-xSamqef71sErIbqhJlA.png)
 
 
 ## Student
